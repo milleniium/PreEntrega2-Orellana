@@ -8,11 +8,39 @@
 
 /*-----HEADER NAV-----*/
 
+body{
+    min-height: 100%;
+    background-image: url(../images/fondoweb.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+@media (min-width: 1000px){
+    .grid-container{
+        grid-template-rows: 56px auto 335px;
+    }
+}
+@media (max-width: 600px){
+    .grid-container{
+        grid-template-rows: 56px auto 678px;
+    }
+}
 
 .header ul li{
     padding-left: 100px;
-    
 }
 
 
@@ -66,6 +94,7 @@
 
 
 .articulos-container > article{
+    background-color: white;
     border-radius: 8px;
     width: 300px;
     height: 400px;
@@ -142,7 +171,14 @@
 
 /*-----LOGIN-----*/
 
+.button-volver{
+    position: relative;
+    bottom: 10px;
+    right: 25px;
+}
+
 .body-login {
+    z-index: 0;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -154,7 +190,7 @@
 }
 
 .login-container{
-    position: relative;
+    z-index: 1;
     max-width: 400px;
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, 0.5);
@@ -275,3 +311,94 @@ button:hover{
 .register p a:hover {
     text-decoration: underline;
 }
+
+
+/*-----PAGE hoteles-----*/
+
+
+.header-hoteles ul li{
+    padding-left: 100px;
+}
+
+/*-----main-----*/
+.main-hoteles{
+    height: 100%;
+}
+.section-container-hoteles{
+    margin: 10px 15px 15px 10px;
+}
+.imagen-hotel{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.articulos-hoteles{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+}
+.section-container-hoteles h2{
+    padding-left: 15px;
+}
+.section-container-hoteles p{
+    padding-left: 15px;
+}
+.section-container-hoteles ul{
+    padding-left: 50px;
+}
+
+@media (min-width: 1000px){
+    .articulos-hoteles{
+        display: flex;
+        margin: 50px;
+    }
+    .imagen-hotel{
+        width: 500px;
+        height: auto;
+        border-radius: 10px 0 0 10px;
+    }
+    .iframe{
+        width: 500px;
+        height: auto;
+    }
+}
+
+/*-----FOOTER HOTELES------*/
+
+.footer-hoteles{
+    height: 100%;
+    background-color: rgb(110, 110, 110);
+}
+.footer-hoteles p{
+    color: white;
+}
+.footer-hoteles h2{
+    color: white;
+}
+.footer-hoteles li{
+    color: white;
+}
+.footer-hoteles .icono{
+    height: 32px;
+    width: 32px;
+}
+.footer-hoteles .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+@media (max-width: 800px){
+    .footer-hoteles .grupo-1{
+        width: 100%;
+        margin-left: 5%;
+        grid-template-columns: repeat(1, 1fr) ;
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+}
+
