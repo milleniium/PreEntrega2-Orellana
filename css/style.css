@@ -31,21 +31,6 @@
     left: 75%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*-----section-----*/
 
 
@@ -115,6 +100,18 @@
 .footer-container{
     height: 100%;
     background-color: rgb(110, 110, 110);
+}
+
+
+.footer-container p{
+    color: white;
+}
+
+.footer-container h2{
+    color: white;
+}
+.footer-container li{
+    color: white;
 }
 
 .icono{
