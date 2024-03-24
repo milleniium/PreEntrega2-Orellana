@@ -56,6 +56,8 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /*-----section-articulos-----*/
@@ -79,13 +81,32 @@
 
 
 .articulos-container > article{
-    background-color: aqua;
     border-radius: 8px;
     width: 300px;
     height: 400px;
-    box-shadow: 0px 0px 30px #000;
+    box-shadow: 0px 0px 10px #000;
 }
+.articulos-imagen{
+    width: 300px;
+    height: 175px;
+    border-radius: 8px 8px 0 0;
+}
+.articulos-items h2{
+    padding-left: 10px;
+}
+.articulos-items p{
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.articulos-items hr{
+    margin: 1px;
+}
+.articulos-items .btn{
+    margin-left: 200px;
+    padding: 5px 20px;
 
+}
 
 
 
