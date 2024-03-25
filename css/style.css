@@ -4,10 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
 }
-
-
 /*-----HEADER NAV-----*/
-
 body{
     min-height: 100%;
     background-image: url(../images/fondoweb.jpg);
@@ -16,10 +13,6 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
-
-
-
 .grid-container{
     display: grid;
     grid-template-areas: 
@@ -38,30 +31,24 @@ body{
         grid-template-rows: 56px auto 678px;
     }
 }
-
 .header ul li{
     padding-left: 100px;
-}
-
-
-/*-----CAROUSEL-----*/
-
-#carouselExample{
-    position: relative;
     z-index: 1;
 }
 
-
-
-.carousel-item button{
-    position: absolute;
-    bottom: 10px;
-    left: 75%;
+.imagen-h1{
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+}
+.imagen-h1 h1{
+    font-size: 100px;
 }
 
 /*-----section-----*/
-
-
 .articulos-container{
     display: flex;
     width: 100%;
@@ -72,27 +59,20 @@ body{
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
 /*-----section-articulos-----*/
-
 @media (min-width: 1000px){
     .articulos-container{
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin: 20px 50px 20px 50px;
+    margin-left: 150px;
     display: grid;
     grid-template-rows: repeat(2, 400px);
     grid-template-columns: repeat(3, 400fr);
     gap: 15px;
-
     align-content: space-evenly;
     align-items: center;
     }
 }
-
-
-
-
 .articulos-container > article{
     background-color: white;
     border-radius: 8px;
@@ -119,35 +99,25 @@ body{
 .articulos-items .btn{
     margin-left: 200px;
     padding: 5px 20px;
-
 }
-
-
-
 /*-----footer-----*/
-
 .footer-container{
     height: 100%;
     background-color: rgb(110, 110, 110);
 }
-
-
 .footer-container p{
     color: white;
 }
-
 .footer-container h2{
     color: white;
 }
 .footer-container li{
     color: white;
 }
-
 .icono{
     height: 32px;
     width: 32px;
 }
-
 .footer-container .grupo-1{
     width: 100%;
     max-width: 1200px;
@@ -157,26 +127,22 @@ body{
     grid-gap: 50px;
     padding: 45px 0px;
 }
-
 @media (max-width: 800px){
     .footer-container .grupo-1{
-        width: 100%;
+        width: 90%;
+        height: auto;
         margin-left: 5%;
         grid-template-columns: repeat(1, 1fr) ;
         grid-gap: 30px;
         padding: 35px 0px;
     }
 }
-
-
 /*-----LOGIN-----*/
-
 .button-volver{
     position: relative;
     bottom: 10px;
     right: 25px;
 }
-
 .body-login {
     z-index: 0;
     display: flex;
@@ -188,7 +154,6 @@ body{
     background-position: center;
     background-size: cover;
 }
-
 .login-container{
     z-index: 1;
     max-width: 400px;
@@ -201,7 +166,6 @@ body{
     align-items: center;
     padding: 2rem 3rem;
 }
-
 .inputbox input{
     width: 100%;
     height: 60px;
@@ -212,7 +176,6 @@ body{
     padding: 0 35px 0 5px;
     color: #fff;
 }
-
 .inputbox ion-icon{
     position: absolute;
     right: 8px;
@@ -220,7 +183,6 @@ body{
     font-size: 1.2rem;
     top: 20px;
 }
-
 .forget{
     margin: 35px 0;
     font-size: 0.85rem;
@@ -228,20 +190,17 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
 h1{
     font-size: 2rem;
     color: #fff;
     text-align: center;
 }
-
 .inputbox{
     position: relative;
     margin: 30px 0;
     max-width: 310px;
     border-bottom: 2px solid #fff;
 }
-
 .inputbox label{
     position: absolute;
     top: 50%;
@@ -252,32 +211,25 @@ h1{
     pointer-events: none;
     transition: all 0.5s ease-in-out;
 }
-
 input:focus ~ label,
 input:valid ~ label{
     top: -5px;
 }
-
-
 .forget label{
     display: flex;
     align-items: center;
 }
-
 .forget label input{
     margin-right: 3px;
 }
-
 .forget a {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
 }
-
 .forget a:hover{
     text-decoration: underline;
 }
-
 .button-login{
     width: 100%;
     height: 40px;
@@ -290,36 +242,27 @@ input:valid ~ label{
     font-weight: 600;
     transition: all 0.4s ease;
 }
-
 button:hover{
     background-color: rgb(255, 255, 255, 0.5);
 }
-
 .register{
     font-size: 0.9rem;
     color: #fff;
     text-align: center;
     margin: 25px 0 10px;
 }
-
 .register p a {
     text-decoration: none;
     color: #fff;
     font-weight: 600;
 }
-
 .register p a:hover {
     text-decoration: underline;
 }
-
-
 /*-----PAGE hoteles-----*/
-
-
 .header-hoteles ul li{
     padding-left: 100px;
 }
-
 /*-----main-----*/
 .main-hoteles{
     height: 100%;
@@ -332,7 +275,6 @@ button:hover{
     height: 300px;
     border-radius: 10px 10px 0 0 ;
 }
-
 .articulos-hoteles{
     background-color: #fff;
     border-radius: 10px;
@@ -347,7 +289,6 @@ button:hover{
 .section-container-hoteles ul{
     padding-left: 50px;
 }
-
 @media (min-width: 1000px){
     .articulos-hoteles{
         display: flex;
@@ -363,7 +304,6 @@ button:hover{
         height: auto;
     }
 }
-
 /*-----FOOTER HOTELES------*/
 
 .footer-hoteles{
